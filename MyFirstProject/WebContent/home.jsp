@@ -37,7 +37,7 @@
  </c:forEach>
  </table>
  <%session.removeAttribute("allEmp");
-   out.println(session.getAttribute("allEmp"));
+  
  }%>
  
  <% if(session.getAttribute("showReg")!=null){ %>
