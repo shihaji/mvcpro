@@ -36,7 +36,9 @@
   <tr> <td>${emp.id}</td><td>${emp.name}</td><td>${emp.salary}</td></tr>
  </c:forEach>
  </table>
- <%session.removeAttribute("allEmp"); }%>
+ <%session.removeAttribute("allEmp");
+   out.println(session.getAttribute("allEmp"));
+ }%>
  
  <% if(session.getAttribute("showReg")!=null){ %>
  <jsp:include page="registerEmployee.jsp"></jsp:include>
